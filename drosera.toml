@@ -1,0 +1,19 @@
+ethereum_rpc = "https://ethereum-hoodi-rpc.publicnode.com"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
+
+[traps]
+
+[traps.wormhole_anomaly]
+path = "out/WormholePoCTrap.sol/Trap.json"
+response_contract = "0x7f7e7c01ea3439e70242fd7137d066b12e6a0696"
+response_function = "respondWithBridgeAlert(address,uint8,uint256,uint256,uint256,uint256,uint256,uint256,bytes32,bool)"
+cooldown_period_blocks = 30
+min_number_of_operators = 1
+max_number_of_operators = 2
+block_sample_size = 10
+private_trap = true
+whitelist = ["0xc0eCB54791e34E46Dc046A2Eb76511d45F230939"]
+address = "0x165eE6bAfed16dE5adEE175Ac4c14a6e4b100A0E"
+
